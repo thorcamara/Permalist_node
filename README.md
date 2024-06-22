@@ -7,9 +7,18 @@
 • Instructions
 <br>
 <br>
-<b>1.</b> Go to pgAdmin, create a new Database called 'permalist' and create a table by looking to "queries.sql" file:
+<b>1.</b> Go to pgAdmin, create a new Database called 'permalist' and create a table by typing in the Query:
 <br>
 <br>
+
+```
+CREATE TABLE items (
+  id SERIAL PRIMARY KEY,
+  title VARCHAR(100) NOT NULL
+);
+
+INSERT INTO items (title) VALUES ('Buy milk'), ('Finish homework');
+```
 <br>
 <b>2.</b> Go to the terminal and type the following command to enter the folder directory:
 <br>
@@ -56,9 +65,18 @@ http://localhost:3000
 <br>
 <br>
 <br>
-<b>1.</b> Vá para o pgAdmin, crie um novo banco de dados chamado 'permalist' e crie uma tabela olhando para o arquivo "queries.sql":
+<b>1.</b> Vá para o pgAdmin, crie um novo banco de dados chamado 'permalist' e crie uma tabela digitando na Query:
 <br>
 <br>
+
+```
+CREATE TABLE items (
+  id SERIAL PRIMARY KEY,
+  title VARCHAR(100) NOT NULL
+);
+
+INSERT INTO items (title) VALUES ('Buy milk'), ('Finish homework');
+```
 <br>
 <b>2.</b> Vá para o terminal e digite o seguinte comando para entrar no diretório da pasta:
 <br>
